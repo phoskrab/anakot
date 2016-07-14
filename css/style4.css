@@ -4,12 +4,12 @@ body{
 	font-size:17px;
 	-webkit-tap-highlight-color:#0085A1;
 }
+
 /*navbar*/
 header{
 	position: relative;
 	width: 100%;
 	background: #FFFFF7;
-	/*border-bottom: 4px solid RGBA(136, 112, 255, 0.31) !important;*/
 }
 
 .logo{
@@ -64,10 +64,10 @@ nav{
 }
 #cssmenu > ul > li > a{
 	margin-top: 10px;
-	padding: 18px;
+	padding: 10px;
 	/*letter-spacing: 1px;*/
 	text-decoration: none;
-	color: #563a3a;
+	color: #6f6565;
 	font-weight: 500;
 }
 #cssmenu > ul > li:hover > a,#cssmenu ul li.active a{
@@ -82,29 +82,7 @@ nav{
 #cssmenu > ul > li.has-sub > a{
 	padding-right: 25px;
 }
-/*#cssmenu > ul > li.has-sub > a:after{
-	position: absolute;
-	top: 22px;
-	right: 11px;
-	width: 8px;
-	height: 2px;
-	display: block;
-	background: #ddd;
-	content:'';
-}*/
-/*#cssmenu > ul > li.has-sub > a:before{
-	position: absolute;
-	top: 19px;
-	right: 14px;
-	display: block;
-	width: 2px;
-	height: 8px;
-	background: #ddd;
-	content: '';
-	-webkit-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	transition: all .25s ease;
-}*/
+
 #cssmenu > ul > li.has-sub:hover > a:before{
 	top: 23px;
 	height:0;
@@ -231,7 +209,7 @@ nav{
 	padding-left: 25px;
 }
 #cssmenu ul ul li{
-	background: #333!important;
+	/*background: #333!important;*/
 }
 #cssmenu ul ul li:hover{
 	background: #363636!important;

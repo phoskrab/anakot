@@ -4,13 +4,18 @@
 	<title>Index</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <!--end font-->
+    <!--slide owl-->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <!--end slide owl-->
 	<!-- Latest compiled JavaScript -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
@@ -19,29 +24,28 @@
 	<!--custom js-->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-	<!--end custom js-->
-	<!--script popover-->
-	<script type="text/javascript">
-    jQuery(document).ready(function($){
-      $('li.iconItem').hover(
-          function(){
-              $('.popover',this).css({display: 'block'});
-          },
-          function(){
-              $('.popover',this).css({display: 'none'});
-          }
-      );
-  });
-  </script>
-	<!--end popover-->
+	<script type="text/javascript" src="jquery.viewportchecker.js"></script>
+	<!--slide owl-->
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+
+	<!--end custom-->
+
+	<script>
+	    $(document).ready(function($) {
+	      $("#owl-example").owlCarousel();
+	    });
+
+	    $("body").data("page", "frontpage");
+    </script>
 </head>
 <body>
 <header>
 <nav id='cssmenu'>
 	<div class="logo">
 		<a href="index.html">
-			<img src="img/logo.png" class="img-responsive" style="height:40px;">
+			<img src="img/logo.png" class="img-responsive" style="height:30px;">
 		</a>
 	</div>
     <div id="head-mobile"></div>
@@ -62,7 +66,7 @@
 	<div class="carousel-inner">
 				
 		<div class="item active">
-			<img src="img/slide.jpg" width="100%">
+			<img src="img/slide1.jpg" width="100%">
 		</div>
 					
 		<div class="item ">
@@ -79,120 +83,192 @@
 	})
 </script>
 <!--end slide-->
+<!--sign up-->
+<div class="container-fluid">
+	<div class="container">
+		<div class="row contact">
+			<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 info">
+
+				<div class="information">
+					<h3>Join the community of Mindful Leaders</h3>
+					<p class="describe">
+						We are not just a regular training company. We want to grow a community of Designful Leaders: practitioners and team players who are committed to make positive impact TODAY. We want to create a space where members can support each other and exchange ideas. Our bi-monthly Designful Leaders Community updates will have tips, ideas, questions and updates from Chhunny and his team. Join us! 
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="form">
+					<div class="col-xs-12" style="padding-left:0px;padding-right:0px;">
+		        	    <div class="form-wrap"> 
+		                    <form role="form" action="javascript:;" method="post" id="login-form" autocomplete="off">
+		                        <div class="form-group">
+		                            <input type="text" name="key" id="key" class="form-control input-lg" placeholder="First name">
+		                        </div>
+		                        <div class="form-group">
+		                            <input type="text" name="key" id="key" class="form-control input-lg" placeholder="Last name">
+		                        </div>
+		                        <div class="form-group">
+		                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="somebody@example.com">
+		                        </div>
+		                        <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Get Update">
+		                    </form>
+		             
+		                    <hr>
+		        	    </div>
+		    		</div> <!-- /.col-xs-12 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--end sign up-->
 <!--start container content-->
 <div class="container">
-	<div class="row row-contact">
-		<div class="col-xs-12 col-sm-4 col-md-4 margin">
-			<div class=" text-center bg-overlay">
-		        <h4>You can just use the class on any
-		        and specify the image you want to use and its height.</h4>
-		        <span>
-		        	<a href="single.html">
-		        	<input class="btn btn-sm btn-default" value="Detail" type="submit">
-		        	</a>
-		        </span>
+	<div class="row-contact">
+		<h3 style="margin-top:10px;margin-bottom:0px;">Latest Training</h3>
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 margin">
+				<div class=" text-center bg-overlay box">
+					<a href="single.html">
+			        <h4 class="myh4">You can just use the class on any
+			        and specify the image you want to use and its height.</h4>
+			        <span>
+			        	<input class="btn btn-sm btn-default" value="Detail" type="submit">
+			        </span>
+			        <a href="single.html">
+				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4 col-md-4 margin">
-			<div class=" text-center bg-overlay">
-		        <h4>You can just use the class on any
-		        and specify the image you want to use and its height.</h4>
-		        <span>
-		        	<a href="single.html">
-		        	<input class="btn btn-sm btn-default" value="Detail" type="submit">
-		        	</a>
-		        </span>
+			<div class="col-xs-12 col-sm-4 col-md-4 margin">
+				<div class=" text-center bg-overlay box">
+					<a href="single.html">
+			        <h4 class="myh4">You can just use the class on any
+			        and specify the image you want to use and its height.</h4>
+			        <span>
+			        	<input class="btn btn-sm btn-default" value="Detail" type="submit">
+			        </span>
+			        </a>
+				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 col-sm-4 col-md-4 margin">
-			<div class=" text-center bg-overlay">
-		        <h4 style="font-size:19px;">You can just use the class on any
-		        and specify the image you want to use and its height.</h4>
-		        <span>
-		        	<a href="single.html">
-		        	<input class="btn btn-sm btn-default" value="Detail" type="submit">
-		        	</a>
-		        </span>
+			<div class="col-xs-12 col-sm-4 col-md-4 margin">
+				<div class=" text-center bg-overlay box">
+					<a href="single.html">
+			        <h4 class="myh4">You can just use the class on any
+			        and specify the image you want to use and its height.</h4>
+			        <span>
+			        	<input class="btn btn-sm btn-default" value="Detail" type="submit">
+			        </span>
+			        </a>
+				</div>
 			</div>
-		</div>
+		</row>
 	</div>
 	<!--new training-->
-	<div class="row myrow1">
-		
+	<div class="feature-post">
+		<h3>Feature post</h3>
 	</div>
 	<!--end training-->
-	<div class="row myrow">
-		<div class = "col-sm-6 col-md-4">
+	<div class="row">
+		<div class = "col-sm-6 col-md-4 box">
+		  <a href="#">
 	      <div class = "thumbnail">
 	         <img src = "img/t3.jpg" alt = "Generic placeholder thumbnail">
 	      </div>
 	      <div class = "caption">
 	         <h3 class="cap_hr">Leadership development </h3>
-	         <p class="description">
-	         Excellence & effective leadership can be the difference between a successful and a mediocre organization. In today’s fast changing world<span class="read-more">    Read More...</span>
-	         </p>
 	      </div>
+	      </a>
    		</div>
-   		<div class = "col-sm-6 col-md-4">
+   		<div class = "col-sm-6 col-md-4 box">
+	       <a href="#">
 	      <div class = "thumbnail">
 	         <img src = "img/t3.jpg" alt = "Generic placeholder thumbnail">
 	      </div>
 	      <div class = "caption">
 	         <h3 class="cap_hr">Leadership development </h3>
-	          <p class="description">
-	         Excellence & effective leadership can be the difference between a successful and a mediocre organization. In today’s fast changing world<span class="read-more">  Read More...</span>
-	         </p>
 	      </div>
+	      </a>
    		</div>
-   		<div class = "col-sm-6 col-md-4">
+   		<div class = "col-sm-6 col-md-4 box">
+	      <a href="#">
+	      <div class = "thumbnail">
+	         <img src = "img/t3.jpg" alt = "Generic placeholder thumbnail">
+	      </div>
+	      <div class = "caption">
+	         <h3 class="cap_hr">Leadership development development</h3>
+	      </div>
+	      </a>
+   		</div>
+   		<div class = "col-sm-6 col-md-4 box">
+	      <a href="#">
 	      <div class = "thumbnail">
 	         <img src = "img/t3.jpg" alt = "Generic placeholder thumbnail">
 	      </div>
 	      <div class = "caption">
 	         <h3 class="cap_hr">Leadership development </h3>
-	         <p class="description">
-	         Excellence & effective leadership can be the difference between a successful and a mediocre organization. In today’s fast changing world<span class="read-more">    Read More...</span>
-	         </p>
 	      </div>
+	      </a>
+   		</div>
+   		<div class = "col-sm-6 col-md-4 box">
+	       <a href="#">
+	      <div class = "thumbnail">
+	         <img src = "img/t3.jpg" alt = "Generic placeholder thumbnail">
+	      </div>
+	      <div class = "caption">
+	         <h3 class="cap_hr">Leadership development </h3>
+	      </div>
+	      </a>
    		</div>
 	</div>
+</div>
 </div>
 <!--end container content-->
 <!--start footer-->
 <!--sponsor-->
 <br><br>
-<div class="banner" style="margin-top:-20px;padding-bottom:60px;">
-  <div class="container small_about">
-      <small style="font-size:16px;">
-          <center class="description">
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-           
-          </center>
-      </small>
-  </div>
+<div class="banner" style="margin-top:-5px;padding-bottom:0px;">
+  <div class="container">
+      <div class="row">
+            <div class="span12">
+	            <div id="owl-example" class="owl-carousel">
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h3>Tons</h3>
+	                    <h4>of options</h4>
+	                </div>
+	              </div>
+	            </div>
+          	</div>
+    </div>
 </div>
 <!--end sponsor-->
 <footer id="footer">

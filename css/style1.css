@@ -64,10 +64,10 @@ nav{
 }
 #cssmenu > ul > li > a{
 	margin-top: 10px;
-	padding: 18px;
+	padding: 10px;
 	/*letter-spacing: 1px;*/
 	text-decoration: none;
-	color: #563a3a;
+	color: #6f6565;
 	font-weight: 500;
 }
 #cssmenu > ul > li:hover > a,#cssmenu ul li.active a{
@@ -82,29 +82,7 @@ nav{
 #cssmenu > ul > li.has-sub > a{
 	padding-right: 25px;
 }
-/*#cssmenu > ul > li.has-sub > a:after{
-	position: absolute;
-	top: 22px;
-	right: 11px;
-	width: 8px;
-	height: 2px;
-	display: block;
-	background: #ddd;
-	content:'';
-}*/
-/*#cssmenu > ul > li.has-sub > a:before{
-	position: absolute;
-	top: 19px;
-	right: 14px;
-	display: block;
-	width: 2px;
-	height: 8px;
-	background: #ddd;
-	content: '';
-	-webkit-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	transition: all .25s ease;
-}*/
+
 #cssmenu > ul > li.has-sub:hover > a:before{
 	top: 23px;
 	height:0;
@@ -386,6 +364,9 @@ nav{
 
 /*end navbar*/
 /*slide*/
+.item{
+	max-height: 350px;
+}
 .carousel.carousel-fade .item {
 	-webkit-transition: opacity 0.5s ease-in-out;
 	-moz-transition: opacity 0.5s ease-in-out;
@@ -393,6 +374,10 @@ nav{
 	-o-transition: opacity 0.5s ease-in-out;
 	transition: opacity 0.5s ease-in-out;
 	opacity:0;
+	 /*position: absolute;*/
+    /*z-index: 2;
+    background-color: black;
+    opacity: .7;*/
 }
 
 .carousel.carousel-fade .active.item {
@@ -430,24 +415,53 @@ nav{
 }
 .margin{
 	margin-top: 28px;
+
 }
-.row-contact{
-	margin-top: 15px;
-	padding: 6px;
-	/*background-color: rgba(16, 149, 251, 0.64);*/
-	padding-bottom: 36px;
-	border-top: 1px solid gray thin !important;
-	/*border: solid thin #d2cbcb !important;*/
+.info{
+
+}
+.information{
+	border-radius: 4px;
+	background-color: rgb(16, 149, 251);
+	padding: 5px;
+	margin-top: 4px;
+}
+.form{
 	padding-top: 10px;
 }
-.h4{
-	font-family: initial;
+.information{
+	color: #F2F3ED;
 }
+.describe{
+	font-size: 16px;
+	font-family: 'Droid Sans', sans-serif;
+	line-height: 30px;
+	color: #F2F3ED;
+	padding: 5px;
+}
+.feature-post{
+	padding-top: 0px;
+}
+.contact{
+	padding: 4px;
+}
+.row-contact{
+	margin-top: 0px;
+	padding: 6px;
+	padding-bottom: 20px;
+	border-top: 1px solid gray thin !important;
+}
+
 .myh4{
-	font-size: 25px;
-	font-weight: 700px;
+	font-size: 18px;
+	font-weight: 500px;
 	color: #FFFFF7;
 	padding-bottom: 5px;
+	line-height: 30px;
+	/*font-family: 'Oswald', sans-serif;*/
+}
+a:hover{
+	text-decoration: none;
 }
 .thumbnail {
 	border-radius: 0px;
@@ -522,14 +536,14 @@ footer .nav>li>a:hover {
 .description{
 	font-size: 16px;
 	font-weight: 400;
-	font-family: unset;
+	font-family: 'Roboto Condensed', sans-serif;
 	color: #1C1924;
 	line-height: 1.5;
     margin: 30px 0;
 }
 .thumbnail {
     display: block;
-    padding: 4px;
+    padding: 0px;
     margin-bottom: 20px;
     line-height: 1.42857143;
     background-color: #fff;
@@ -545,10 +559,11 @@ footer .nav>li>a:hover {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 .cap_hr{
-	font-size: 20px;
+	font-size: 18px;
 	padding-bottom: 7px;
-	color: #F27935;
-	border-bottom: solid thin;
+	border-bottom: solid thin #E7E7E7;
+	font-family: ''Droid Sans', sans-serif';
+	color: #5E6163;
 
 }
 .read-more{
@@ -567,5 +582,47 @@ footer .nav>li>a:hover {
     padding-top: 50px;
 }
 
-
+.box:hover{
+    -moz-transition: all 0.4s ease-out;  /* FF4+ */
+    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.4s ease-out;
+     opacity: 0.80; 
+     background-color: transparent;
+}
 /*end training*/
+/*form contact*/
+#login {
+    /*padding-top: 80px*/
+}
+.form-wrap{
+	padding-top: 0px;
+}
+#login .form-wrap {
+    width: 30%;
+    margin: 0 auto;
+}
+#login h1 {
+    color: #1fa67b;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+
+/*    --------------------------------------------------
+	:: Inputs & Buttons
+	-------------------------------------------------- */
+.form-control {
+    color: #212121;
+}
+.btn-custom {
+    color: #fff;
+	background-color: #2980B9;
+	padding-top: 10px;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+    color: #fff;
+}

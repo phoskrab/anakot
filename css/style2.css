@@ -4,12 +4,12 @@ body{
 	font-size:17px;
 	-webkit-tap-highlight-color:#0085A1;
 }
+
 /*navbar*/
 header{
 	position: relative;
 	width: 100%;
 	background: #FFFFF7;
-	/*border-bottom: 4px solid RGBA(136, 112, 255, 0.31) !important;*/
 }
 
 .logo{
@@ -64,10 +64,10 @@ nav{
 }
 #cssmenu > ul > li > a{
 	margin-top: 10px;
-	padding: 18px;
+	padding: 10px;
 	/*letter-spacing: 1px;*/
 	text-decoration: none;
-	color: #563a3a;
+	color: #6f6565;
 	font-weight: 500;
 }
 #cssmenu > ul > li:hover > a,#cssmenu ul li.active a{
@@ -82,29 +82,7 @@ nav{
 #cssmenu > ul > li.has-sub > a{
 	padding-right: 25px;
 }
-/*#cssmenu > ul > li.has-sub > a:after{
-	position: absolute;
-	top: 22px;
-	right: 11px;
-	width: 8px;
-	height: 2px;
-	display: block;
-	background: #ddd;
-	content:'';
-}*/
-/*#cssmenu > ul > li.has-sub > a:before{
-	position: absolute;
-	top: 19px;
-	right: 14px;
-	display: block;
-	width: 2px;
-	height: 8px;
-	background: #ddd;
-	content: '';
-	-webkit-transition: all .25s ease;
-	-ms-transition: all .25s ease;
-	transition: all .25s ease;
-}*/
+
 #cssmenu > ul > li.has-sub:hover > a:before{
 	top: 23px;
 	height:0;
@@ -231,7 +209,7 @@ nav{
 	padding-left: 25px;
 }
 #cssmenu ul ul li{
-	background: #333!important;
+	/*background: #333!important;*/
 }
 #cssmenu ul ul li:hover{
 	background: #363636!important;
@@ -439,7 +417,7 @@ footer .nav>li>a:hover {
 
 }
 .mycontent{
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .description{
 	padding-top: 0px;
@@ -467,21 +445,23 @@ footer .nav>li>a:hover {
 .package-box{
     background-color: #199EC7;
     border-radius: 3px;
-
-    /*padding:0px 10px;*/
     margin-bottom: 4px;
     margin-top:5px;
-    /*padding-bottom:10px;*/
+}
+.package-box:hover{
+	 background-color: #AD310B;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 .package-box-profile{
-    /*background-color: #39AB49;*/
     
     border-radius: 3px;
-width: 100%;height:70px;
-    /*padding:0px 10px;*/
+    width: 100%;height:70px;/
     margin-bottom: 4px;
     margin-top:5px;
-    /*padding-bottom:10px;*/
 }
 .btn-xs{
 	background-color: white;
@@ -515,4 +495,33 @@ width: 100%;height:70px;
 .modal-dialog {
     margin: 65px auto;
     border: thin solid #4776e7;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid rgba(240, 212, 6, 0.41);
+    background-color: RGBA(250, 202, 155, 0.36);
+}
+.box {
+    padding: 20px;
+	border: 1px solid RGBA(243, 237, 237, 0.42);
+	position: relative;
+	color: #25373D;
+	font-size: 16px;
+}
+.box:hover{
+	 background-color: #2C82C9;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+    text-decoration: none;
+    color: #F6F7F2;
+    font-weight: 500;
+    font-size: 16px;
+}
+a:hover{
+	text-decoration: none; 
 }
