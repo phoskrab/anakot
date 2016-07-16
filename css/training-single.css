@@ -405,7 +405,7 @@ footer .nav>li>a:hover {
 /*footer*/
 /*start overlay*/
 .bg-overlay {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    /*background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -445,7 +445,6 @@ footer .nav>li>a:hover {
 }
 
 .bg-overlay {
-	border-radius: 3px;
     /*background: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.53)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");*/
     background-repeat: no-repeat;
     background-size: cover;

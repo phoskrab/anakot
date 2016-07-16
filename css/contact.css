@@ -1,6 +1,8 @@
 *{margin:0;padding:0;text-decoration:none}
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family:Lora,'Times New Roman',serif;
+	font-size:17px;
+	-webkit-tap-highlight-color:#0085A1;
 }
 
 /*navbar*/
@@ -62,11 +64,11 @@ nav{
 }
 #cssmenu > ul > li > a{
 	margin-top: 10px;
-	padding: 16px;
-	letter-spacing: 1px;
+	padding: 10px;
+	/*letter-spacing: 1px;*/
 	text-decoration: none;
 	color: #6f6565;
-	font-weight: 600;
+	font-weight: 500;
 }
 #cssmenu > ul > li:hover > a,#cssmenu ul li.active a{
 	color: #F29B34; 
@@ -415,162 +417,34 @@ footer .nav>li>a:hover {
 
 }
 .mycontent{
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .description{
-	padding-top: 5px;
-	font-size: 16px;
+	padding-top: 0px;
+	font-size: 17px;
 	font-weight: 400;
-	font-family: serif;
+	font-family: unset;
 	color: #1C1924;
-	line-height: 28px;
 	list-style: none;
-}
-/*left list for booking*/
-.left-list{
-	background-color: red;
-	width: 100%;
-}
-.margin{
-	margin-top: 28px;
-}
-.margin:hover{
-	 -moz-transition: all 0.4s ease-out;  /* FF4+ */
-    -o-transition: all 0.4s ease-out;  /* Opera 10.5+ */
-    -webkit-transition: all 0.4s ease-out;  /* Saf3.2+, Chrome */
-    -ms-transition: all 0.4s ease-out;
-     opacity: 0.80; 
-     background-color: transparent;
-     color: blue;
-}
-
-.bg-overlay {
-	border-radius: 3px;
-    /*background: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0.53)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");*/
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    height: 300px;
-    padding-top: 80px;
-}
-.left-right-padd{
-	padding-top: 10px;
-	padding-right: 0px;
-	padding-left: 0px;
+	line-height: 1.7;
+	margin: 30px 0;
 }
 
 a:hover{
-	text-decoration: none;
+	text-decoration: none; 
 }
-/*pricing*/
-.panel
-{
-    text-align: center;
+	
+/*contact*/
+.jumbotron {
+background: #358CCE;
+color: #FFF;
+border-radius: 0px;
 }
-.panel:hover { box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px 5px rgba(130, 130, 130, 0.35); }
-.panel-body
-{
-    padding: 0px;
-    text-align: center;
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
 }
-
-.the-price
-{
-    background-color: rgba(220,220,220,.17);
-    box-shadow: 0 1px 0 #dcdcdc, inset 0 1px 0 #fff;
-    padding: 20px;
-    margin: 0;
+.h1 small {
+font-size: 24px;
 }
-
-.the-price h1
-{
-    line-height: 1em;
-    padding: 0;
-    margin: 0;
-}
-
-.subscript
-{
-    font-size: 25px;
-}
-strong{
-	color: #F29B34;
-}
-.panel-footer{
-	color: #F29B34;
-}
-/* CSS-only ribbon styles    */
-.cnrflash
-{
-    /*Position correctly within container*/
-    position: absolute;
-    top: -9px;
-    right: 4px;
-    z-index: 1; /*Set overflow to hidden, to mask inner square*/
-    overflow: hidden; /*Set size and add subtle rounding  		to soften edges*/
-    width: 100px;
-    height: 100px;
-    border-radius: 3px 5px 3px 0;
-}
-.cnrflash-inner
-{
-    /*Set position, make larger then 			container and rotate 45 degrees*/
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 145px;
-    height: 145px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -o-transform: rotate(45deg); /* Opera */
-    -moz-transform: rotate(45deg); /* Firefox */
-    -webkit-transform: rotate(45deg); /* Safari and Chrome */
-    -webkit-transform-origin: 100% 100%; /*Purely decorative effects to add texture and stuff*/ /* Safari and Chrome */
-    -ms-transform-origin: 100% 100%;  /* IE 9 */
-    -o-transform-origin: 100% 100%; /* Opera */
-    -moz-transform-origin: 100% 100%; /* Firefox */
-    background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.1) 50%), linear-gradient(0deg, transparent 0%, rgba(1,1,1,.2) 50%);
-    background-size: 4px,auto, auto,auto;
-    background-color: #aa0101;
-    box-shadow: 0 3px 3px 0 rgba(1,1,1,.5), 0 1px 0 0 rgba(1,1,1,.5), inset 0 -1px 8px 0 rgba(255,255,255,.3), inset 0 -1px 0 0 rgba(255,255,255,.2);
-}
-.cnrflash-inner:before, .cnrflash-inner:after
-{
-    /*Use the border triangle trick to make  				it look like the ribbon wraps round it's 				container*/
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: -16px;
-    width: 0;
-    height: 0;
-    border: 8px solid #800000;
-}
-.cnrflash-inner:before
-{
-    left: 1px;
-    border-bottom-color: transparent;
-    border-right-color: transparent;
-}
-.cnrflash-inner:after
-{
-    right: 0;
-    
-}
-.cnrflash-label
-{
-    /*Make the label look nice*/
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    padding-bottom: 5px;
-    color: #fff;
-    text-shadow: 0 1px 1px rgba(1,1,1,.8);
-    font-size: 0.95em;
-    font-weight: bold;
-    text-align: center;
-}
-
-
-/*end pricing*/

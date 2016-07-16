@@ -4,26 +4,41 @@
 	<title>About</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	 <!-- Latest compiled and minified CSS -->
-	  <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	  <!--slide owl-->
+    <!-- <link href="css/bootstraptheme.css" rel="stylesheet"> -->
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <!--end slide owl-->
+    <!-- Custom Fonts -->
+   	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!--end font-->
-<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style5.css">
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style5.css">
 	<!--end custom css-->
 	<!--custom js-->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-	<!--end custom js-->
+	<!--slide owl-->
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+
+	<!--end custom-->
+	<script>
+	    $(document).ready(function($) {
+	      $("#owl-example").owlCarousel();
+	    });
+
+	    $("body").data("page", "frontpage");
+    </script>
 </head>
 <style type="text/css">
 	div.img {
@@ -79,10 +94,9 @@ div.desc {
 <body>
 <header>
 <nav id='cssmenu'>
-	
 	<div class="logo">
 		<a href="index.html">
-			<img src="img/logo.png" class="img-responsive" style="height:40px;">
+			<img src="img/logo.png" class="img-responsive" style="height:30px;">
 		</a>
 	</div>
     <div id="head-mobile"></div>
@@ -92,79 +106,77 @@ div.desc {
 	<li><a href='training.html'>TRAINING</a></li>
 	<li><a href='client.html'>CLIENT</a>
 	</li>
-	<li><a href='team.html'>TEAM</a></li>
+	<li><a href='blog.html'>BLOG</a></li>
 	<li><a href='about.html'>ABOUT</a></li>
 	</ul>
-
-
 </nav>
 </header>
+
 <!--container-->
-<div class=" bg-overlay" style="border-bottom: 15px solid rgba(139, 139, 159, 0.8);">
+<div class="bg-overlay" style="background: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.42)), url(img/banner_main.png);
+    				background-repeat: no-repeat;border-radius:0px;" >
 	<div class="row text-center">
-		<h3>This is a beautiful background image<br> with a transparent overlay.</h3>
+		<h3>About</h3>
 	</div>
 </div>
 <div class="container mycontent">
-	<h4>Why Hire Anakot Asia</h4>
+	<center><h4 class="head-title">Why Hire Anakot Asia</h4></center>
 	<p class="description">
 		We provide regular trainings to companies and NGOs to increase the potential of their people and their teams. Through workshops, mindful leadership development, talks and seminars we help big and small organizations to instill a culture of collaboration and balanced leadership. Our expertise ranges from HR – with particular focus on high performance teams and leadership – to personal development and customer care. We offer a wide selection of curricula and format, tailored to the needs of our clients.
 		<br>
 	</p>
-	<h4>How we do it</h4>
+	<center><h4 class="head-title">How we do it</h4></center>
 	<p class="description">
 		We provide regular trainings to companies and NGOs to increase the potential of their people and their teams. Through workshops, mindful leadership development, talks and seminars we help big and small organizations to instill a culture of collaboration and balanced leadership. Our expertise ranges from HR – with particular focus on high performance teams and leadership – to personal development and customer care. We offer a wide selection of curricula and format, tailored to the needs of our clients.
 		<br>
-		<img src="img/How-do-we-do.jpg" class="img-responsive">
+		<img src="img/How-do-we-do.jpg" class="img-responsive" width="100%">
 	</p>
-	<h4>About Our Team</h4>
-	<div class="responsive">
-	  	<div class="img">
-	    <a target="_blank" href="img_fjords.jpg" data-toggle="modal" data-target="#myModal">
-	      <img src="img/Chhunn-Noem-2.jpg" alt="Trolltunga Norway" width="250" height="200">
-	    </a>
-	    <div class="desc">
-	    	<h5 class="name">Chhunny NOEM</h5>
-	    	<hr>
-	    	<label>Founder</label>
-	    </div>
-	  	</div>
-	</div>
-	<div class="responsive">
-	  	<div class="img">
-	    <a target="_blank" href="img_fjords.jpg" data-toggle="modal" data-target="#myModal">
-	      <img src="img/Chhunn-Noem-2.jpg" alt="Trolltunga Norway" width="250" height="200">
-	    </a>
-	    <div class="desc">
-	    	<h5 class="name">Chhunny NOEM</h5>
-	    	<hr>
-	    	<label>Founder</label>
-	    </div>
-	  	</div>
-	</div>
-	<div class="responsive">
-	  	<div class="img">
-	    <a target="_blank" href="img_fjords.jpg" data-toggle="modal" data-target="#myModal">
-	      <img src="img/Chhunn-Noem-2.jpg" alt="Trolltunga Norway" width="250" height="200">
-	    </a>
-	    <div class="desc">
-	    	<h5 class="name">Chhunny NOEM</h5>
-	    	<hr>
-	    	<label>Founder</label>
-	    </div>
-	  	</div>
-	</div>
-	<div class="responsive">
-	  	<div class="img">
-	    <a target="_blank" href="img_fjords.jpg" data-toggle="modal" data-target="#myModal">
-	      <img src="img/Chhunn-Noem-2.jpg" alt="Trolltunga Norway" width="250" height="200">
-	    </a>
-	    <div class="desc">
-	    	<h5 class="name">Chhunny NOEM</h5>
-	    	<hr>
-	    	<label>Founder</label>
-	    </div>
-	  	</div>
+	<center><h4 class="head-title">About Our Team</h4></center>
+	<div class="row">
+		<div class="col-xs-6 col-md-3">
+		    <a href="profile.html" class="thumbnail">
+		      <img src="img/Chhunn-Noem-2.jpg" alt="Not found!" class="img-responsive">
+		    </a>
+		    <div>
+		    <center><label>Chhunny NOEM</label></center>
+		    </div>
+		    <div>
+		    <center><label class="founder">Founder</label></center>
+		    </div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		    <a href="profile.html" class="thumbnail">
+		      <img src="img/Chhunn-Noem-2.jpg" alt="Not found!" class="img-responsive">
+		    </a>
+		    <div>
+		    <center><label>Chhunny NOEM</label></center>
+		    </div>
+		    <div>
+		    <center><label class="founder">Founder</label></center>
+		    </div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		    <a href="profile.html" class="thumbnail">
+		      <img src="img/Chhunn-Noem-2.jpg" alt="Not found!" class="img-responsive">
+		    </a>
+		    <div>
+		    <center><label>Chhunny NOEM</label></center>
+		    </div>
+		    <div>
+		    <center><label class="founder">Founder</label></center>
+		    </div>
+		</div>
+		<div class="col-xs-6 col-md-3">
+		    <a href="profile.html" class="thumbnail">
+		      <img src="img/Chhunn-Noem-2.jpg" alt="Not found!" class="img-responsive">
+		    </a>
+		    <div>
+		    <center><label>Chhunny NOEM</label></center>
+		    </div>
+		    <div>
+		    <center><label class="founder">Founder</label></center>
+		    </div>
+		</div>
 	</div>
 </div>
 		<!--modal profile-->
@@ -197,38 +209,39 @@ div.desc {
 <!--start footer-->
 <!--sponsor-->
 <br><br>
-<div class="banner" style="margin-top:-20px;padding-bottom:60px;">
-  <div class="container small_about">
-      <small style="font-size:16px;">
-          <center class="description">
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-            <span class="col-xs-12 col-md-3 col-lg-3 col-sm-3 sponsor">
-              <img src="img/logo.png" class="img-responsive">
-            </span>
-           
-          </center>
-      </small>
-  </div>
+<div class="banner" style="margin-top:-5px;padding-bottom:0px;">
+  <div class="container">
+      <div class="row">
+            <div class="span12">
+	            <div id="owl-example" class="owl-carousel">
+	                <div class="item steelGray">
+	                  <img src="img/client-smalworld.jpg" alt="Tons of Opotions">
+	                    <h4>client-smalworld</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/client_0000_Young_Startups-e1436760909205.jpg" alt="Tons of Opotions">
+	                    <h4>Young_Startups Cambodia</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/client_0002_Impact-Hub_n.jpg" alt="Tons of Opotions">
+	                    <h4>Impact-Hub Phnom Penh</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/ICS_n.gif" alt="Tons of Opotions">
+	                    <h4>ICS Asia</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/tons.png" alt="Tons of Opotions">
+	                    <h4>Social Enterprise Cambodia</h4>
+	                </div>
+	                <div class="item steelGray">
+	                  <img src="img/CEFY-LOGO.jpg" alt="Tons of Opotions">
+	                    <h4>Career Employment For Youth</h4>
+	                </div>
+	              </div>
+	            </div>
+          	</div>
+    </div>
 </div>
 <!--end sponsor-->
 <footer id="footer">
