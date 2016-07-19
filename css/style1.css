@@ -164,16 +164,24 @@ nav{
 	border-left: 1px solid #333;
 }
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active> a{border-top:1px solid #333}
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
 .logo{
 	position: absolute;
-	top: -15px;
+	top: -10px;
 	left: 0;
 	width: 60%;
 	height: 50px;
 	text-align: center;
 	padding: 10 0 0 0;
 	float: none;
+}
+#cssmenu > ul > li > a{
+	margin-top: 10px;
+	padding: 8px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #6f6565;
+	font-weight: 600;
 }
 .logo2{
 	display: none;
@@ -420,7 +428,7 @@ nav{
 }
 .information{
 	border-radius: 4px;
-	background-color: rgb(16, 149, 251);
+	background-color: #287bbc;
 	padding: 5px;
 	margin-top: 4px;
 }
@@ -429,6 +437,7 @@ nav{
 }
 .information{
 	color: #F2F3ED;
+	padding-top: 20px;
 }
 .describe{
 	font-size: 16px;
@@ -436,6 +445,38 @@ nav{
 	line-height: 30px;
 	color: #F2F3ED;
 	padding: 5px;
+	font-weight: 600;
+}
+.font-title{
+	font-size: 26px;
+	font-weight: 600;
+}
+@media only screen and (max-width: 400px){
+	.container-fluid{
+		padding: 0px;
+	}
+	.container{
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 500px){
+	.clean-xs{
+		padding: 0px;
+	}
+	.contact{
+		padding: 0px;
+	}
+	.describe{
+		font-size: 16px;
+		font-family: 'Droid Sans', sans-serif;
+		line-height: 30px;
+		color: #F2F3ED;
+		padding: 5px;
+	}
+	.font-title{
+		font-size: 24px;
+		font-weight: 600;
+	}
 }
 .feature-post{
 	padding-top: 0px;
@@ -456,7 +497,6 @@ nav{
 	color: #FFFFF7;
 	padding-bottom: 5px;
 	line-height: 30px;
-	font-family: 'Oswald', sans-serif;
 }
 a:hover{
 	text-decoration: none;
@@ -622,4 +662,7 @@ footer .nav>li>a:hover {
 .btn-custom:hover,
 .btn-custom:focus {
     color: #fff;
+}
+.form-group {
+    margin-bottom: 21px;
 }

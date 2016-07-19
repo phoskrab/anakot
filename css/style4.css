@@ -2,7 +2,6 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 }
-
 /*navbar*/
 header{
 	position: relative;
@@ -164,16 +163,24 @@ nav{
 	border-left: 1px solid #333;
 }
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active> a{border-top:1px solid #333}
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
 .logo{
 	position: absolute;
-	top: -15px;
+	top: -10px;
 	left: 0;
 	width: 60%;
 	height: 50px;
 	text-align: center;
 	padding: 10 0 0 0;
 	float: none;
+}
+#cssmenu > ul > li > a{
+	margin-top: 10px;
+	padding: 8px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #6f6565;
+	font-weight: 600;
 }
 .logo2{
 	display: none;
@@ -572,5 +579,30 @@ strong{
     text-align: center;
 }
 
-
-/*end pricing*/
+@media only screen and (max-width: 400px){
+	.container-fluid{
+		padding: 0px;
+	}
+	.container{
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 500px){
+	.clean-xs{
+		padding: 0px;
+	}
+	.contact{
+		padding: 0px;
+	}
+	.describe{
+		font-size: 16px;
+		font-family: 'Droid Sans', sans-serif;
+		line-height: 30px;
+		color: #F2F3ED;
+		padding: 5px;
+	}
+	.font-title{
+		font-size: 24px;
+		font-weight: 600;
+	}
+}

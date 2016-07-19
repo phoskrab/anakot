@@ -28,14 +28,13 @@ pre.pre-show{
 	-webkit-border-radius: 0px 0px 4px 4px;
 	-moz-border-radius: 0px 0px 4px 4px;
 	border-radius: 0px 0px 4px 4px;
-	
 }
 
 /* Demo Slides */
 
 #owl-example .item{
 	padding: 5px 0px;
-	margin: 10px;
+	margin: 20px;
 	color: #FFF;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -48,7 +47,6 @@ pre.pre-show{
 	display: block;
 }
 .item img:hover{
-	background: red;
 	-webkit-transition: background-color 1000ms linear;
     -moz-transition: background-color 1000ms linear;
     -o-transition: background-color 1000ms linear;
@@ -62,7 +60,8 @@ pre.pre-show{
 }
 #owl-example .item h4{
 	margin: 5px 0 0;
-	font-size: 18px;
+	font-size: 10px;
+	color: #3D8EB9;
 }
 .item h1{
 	margin: inherit;
